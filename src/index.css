@@ -247,5 +247,10 @@ footer { padding:2rem 5vw; color:var(--paper); background:var(--navy); display:f
   .bubble { animation:none; }
 }
 
-.portrait-frame { width: min(78%, 520px); height: auto; aspect-ratio: 3 / 4; }
-@media (max-width: 820px) { .portrait-frame { width: 86%; } }
+/* Hero: foto di tengah, bubble dekat foto */
+.hero-visual { --fw: 64; align-items: center; container-type: inline-size; }
+.portrait-frame { width: calc(var(--fw) * 1%); height: auto; aspect-ratio: 3 / 4; border-radius: 28px; }
+.bubble-one { top: calc(50% - var(--fw) * 0.56cqw); left: 4%; }
+.bubble-two { top: calc(50% - var(--fw) * 0.09cqw); right: 3%; }
+.bubble-three { top: calc(50% + var(--fw) * 0.36cqw); bottom: auto; left: 3%; }
+@media (max-width: 820px) { .hero-visual { --fw: 72; } }
