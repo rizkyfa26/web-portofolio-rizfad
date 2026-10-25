@@ -79,26 +79,26 @@ const projects = [
   {
     category: 'Data Analyst · Excel · Dashboard',
     title: 'Ecommerce Sales Analysis Dashboard',
-    cover: './assets/projects/ecommerce-sales-dashboard-cover.png',
-    file: './assets/projects/ecommerce-sales-dashboard.pptx',
+    cover: '/assets/projects/ecommerce-sales-dashboard-cover.png',
+    file: '/assets/projects/ecommerce-sales-dashboard.pptx',
   },
   {
     category: 'Data Analysis · Google Looker Studio · Dashboard',
     title: 'Sales and Customer Analysis',
-    cover: './assets/projects/sales-customer-analysis-cover.jpg',
+    cover: '/assets/projects/sales-customer-analysis-cover.jpg',
     file: 'https://datastudio.google.com/reporting/b1fcce14-fec0-42b5-aa94-84423a1aff3f',
   },
   {
     category: 'Data Science / Machine Learning',
     title: 'Diabetes Risk Prediction Based on Urban Lifestyle Indicators',
-    cover: './assets/projects/diabetes-risk-prediction-cover.jpg',
-    file: './assets/projects/diabetes-risk-prediction.pptx',
+    cover: '/assets/projects/diabetes-risk-prediction-cover.jpg',
+    file: '/assets/projects/diabetes-risk-prediction.pptx',
   },
   {
     category: 'AI / Machine Learning',
     title: 'Credit Loss Prediction',
-    cover: './assets/projects/credit-loss-prediction-cover.png',
-    file: './assets/projects/credit-loss-prediction.pptx',
+    cover: '/assets/projects/credit-loss-prediction-cover.png',
+    file: '/assets/projects/credit-loss-prediction.pptx',
   },
 ]
 
@@ -136,11 +136,11 @@ const technicalSkills = [
 ]
 
 const localSkillLogos: Record<string, string> = {
-  microsoftexcel: './assets/skills/excel.jpg',
-  powerbi: './assets/skills/power-bi.jpg',
-  tableau: './assets/skills/tableau.jpg',
-  microsoftword: './assets/skills/word.jpg',
-  microsoftpowerpoint: './assets/skills/powerpoint.jpg',
+  microsoftexcel: '/assets/skills/excel.jpg',
+  powerbi: '/assets/skills/power-bi.jpg',
+  tableau: '/assets/skills/tableau.jpg',
+  microsoftword: '/assets/skills/word.jpg',
+  microsoftpowerpoint: '/assets/skills/powerpoint.jpg',
 }
 
 const certificates = [
@@ -149,42 +149,42 @@ const certificates = [
     issuer: 'Dicoding Indonesia',
     date: 'August 18, 2026',
     detail: '60-hour Python programming course.',
-    href: './assets/certificates/python.pdf',
+    href: '/assets/certificates/python.pdf',
   },
   {
     title: 'Data Visualization',
     issuer: 'MySkill',
     date: 'August 18, 2026',
     detail: 'E-learning Data Analysis dan praktik mandiri.',
-    href: './assets/certificates/data-visualization.pdf',
+    href: '/assets/certificates/data-visualization.pdf',
   },
   {
     title: 'HITLAB Tech Class: Data Science',
     issuer: 'Information Systems UIN Jakarta',
     date: '2025',
     detail: 'Nilai akhir 81,82% dengan materi data science dan machine learning.',
-    href: './assets/certificates/data-science-hitlab.pdf',
+    href: '/assets/certificates/data-science-hitlab.pdf',
   },
   {
     title: 'AI/Machine Learning Certificate',
     issuer: 'GDGoC UIN Syarif Hidayatullah Jakarta',
     date: '2026',
     detail: 'Weekly Class AI/ML Beginner.',
-    href: './assets/certificates/aiml-beginner.jpg',
+    href: '/assets/certificates/aiml-beginner.jpg',
   },
   {
     title: 'Cloud and Generative AI Fundamentals on AWS',
     issuer: 'Dicoding Indonesia',
     date: 'Date not listed',
     detail: 'Foundational cloud and Generative AI on AWS certification.',
-    href: './assets/certificates/aws-cloud-genai.pdf',
+    href: '/assets/certificates/aws-cloud-genai.pdf',
   },
 ]
 
 const gallery = [
-  { src: './assets/pbak.jpeg', title: 'Information Systems Orientation 2026' },
-  { src: './assets/sharing.jpg', title: 'Sharing Session 2026' },
-  { src: './assets/gdg-graduation.jpg', title: 'GDGoC UIN Jakarta 2026' },
+  { src: '/assets/pbak.jpeg', title: 'Information Systems Orientation 2026' },
+  { src: '/assets/sharing.jpg', title: 'Sharing Session 2026' },
+  { src: '/assets/gdg-graduation.jpg', title: 'GDGoC UIN Jakarta 2026' },
 ]
 
 function SectionTitle({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
@@ -292,7 +292,7 @@ export default function App() {
           </div>
           <div className="hero-visual">
             <div className="portrait-frame">
-              <img src="./assets/rizky.jpeg" alt="Portrait of Rizky Fadilah" />
+              <img src="/assets/rizky.jpeg" alt="Portrait of Rizky Fadilah" />
             </div>
             <span className="bubble bubble-one">Data Analyst</span>
             <span className="bubble bubble-two">Human Capital</span>
@@ -305,7 +305,7 @@ export default function App() {
           <SectionTitle eyebrow="01">About Me</SectionTitle>
           <div className="about-grid">
             <div className="about-photo">
-              <img src="./assets/rizky.jpeg" alt="Rizky Fadilah wearing a gray shirt" />
+              <img src="/assets/rizky.jpeg" alt="Rizky Fadilah wearing a gray shirt" />
             </div>
             <div className="about-copy">
               <p className="lead">
@@ -434,7 +434,7 @@ export default function App() {
             <SectionTitle eyebrow="05">Education</SectionTitle>
           </div>
           <div className="timeline-card">
-            <img className="education-logo" src="./assets/education/uin.png" alt="UIN Syarif Hidayatullah Jakarta logo" />
+            <img className="education-logo" src="/assets/education/uin.png" alt="UIN Syarif Hidayatullah Jakarta logo" />
             <div>
               <span>Aug 2025 – Present</span>
               <h3>UIN Syarif Hidayatullah Jakarta</h3>
@@ -447,7 +447,7 @@ export default function App() {
             </div>
           </div>
           <div className="timeline-card">
-            <img className="education-logo" src="./assets/education/sman2.png" alt="SMA Negeri 2 Kota Tangerang Selatan logo" />
+            <img className="education-logo" src="/assets/education/sman2.png" alt="SMA Negeri 2 Kota Tangerang Selatan logo" />
             <div>
               <span>Jul 2022 – Jul 2025</span>
               <h3>SMA Negeri 2 Kota Tangerang Selatan</h3>
@@ -469,15 +469,15 @@ export default function App() {
           <SectionTitle eyebrow="07">Achievement</SectionTitle>
           <div className="achievement-list">
             <article>
-              <img src="./assets/achievement-airlangga.jpeg" alt="Management Startup Challenge 2023 semifinalist certificate" />
+              <img src="/assets/achievement-airlangga.jpeg" alt="Management Startup Challenge 2023 semifinalist certificate" />
               <div><b>Semifinalist</b><h3>Management Startup Challenge 2023</h3><p>Business Planning · Management Student Association, Airlangga University</p></div>
             </article>
             <article>
-              <img src="./assets/achievement-upn.jpg" alt="Digital Competition 2026 Business Analyst certificate" />
+              <img src="/assets/achievement-upn.jpg" alt="Digital Competition 2026 Business Analyst certificate" />
               <div><b>11th Place</b><h3>Digital Competition 2026</h3><p>Business Analyst · D3 Information Systems Student Association, UPN Veteran Jakarta</p></div>
             </article>
             <article>
-              <img src="./assets/achievement-kompek.jpg" alt="KOMPeK 26 Business Challenge certificate" />
+              <img src="/assets/achievement-kompek.jpg" alt="KOMPeK 26 Business Challenge certificate" />
               <div><b>Participant</b><h3>KOMPeK 26</h3><p>Business Challenge · Faculty of Economics and Business, University of Indonesia</p></div>
             </article>
             <article className="achievement-text-only">
