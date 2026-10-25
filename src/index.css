@@ -247,21 +247,14 @@ footer { padding:2rem 5vw; color:var(--paper); background:var(--navy); display:f
   .bubble { animation:none; }
 }
 
-/* Hero + About khusus HP mode Desktop site (layar tegak) */
-@media (orientation: portrait) and (min-width: 821px) {
-  .hero-visual { --fw: 64; align-items: center; container-type: inline-size; }
-  .portrait-frame { width: calc(var(--fw) * 1%); height: auto; aspect-ratio: 3 / 4; border-radius: 28px; }
-  .bubble-one { top: calc(50% - var(--fw) * 0.56cqw); left: 4%; }
-  .bubble-two { top: calc(50% - var(--fw) * 0.09cqw); right: 3%; }
-  .bubble-three { top: calc(50% + var(--fw) * 0.36cqw); bottom: auto; left: 3%; }
-
-  .about-photo { width: 100%; max-width: 30.4vw; aspect-ratio: 3 / 4; border-radius: 28px; max-height: none; }
-}
+/* Foto hero dan about: persegi panjang tegak di tengah, semua layar */
+.hero-visual { --fw: 64; --w: min(calc(var(--fw) * 1cqw), 440px); align-items: center; container-type: inline-size; }
+.portrait-frame { width: var(--w); height: auto; aspect-ratio: 3 / 4; border-radius: 28px; }
+.bubble-one { top: calc(50% - var(--w) * 0.56); left: 4%; bottom: auto; }
+.bubble-two { top: calc(50% - var(--w) * 0.09); right: 3%; bottom: auto; }
+.bubble-three { top: calc(50% + var(--w) * 0.36); left: 3%; bottom: auto; }
+.about-photo { width: 100%; max-width: 440px; aspect-ratio: 3 / 4; border-radius: 28px; max-height: none; }
 @media (max-width: 820px) {
-  .hero-visual { --fw: 72; align-items: center; container-type: inline-size; }
-  .portrait-frame { width: calc(var(--fw) * 1%); height: auto; aspect-ratio: 3 / 4; border-radius: 28px; }
-  .bubble-one { top: calc(50% - var(--fw) * 0.56cqw); left: 4%; }
-  .bubble-two { top: calc(50% - var(--fw) * 0.09cqw); right: 3%; bottom: auto; }
-  .bubble-three { top: calc(50% + var(--fw) * 0.36cqw); bottom: auto; left: 3%; }
-  .about-photo { width: 72%; margin: 0 auto; aspect-ratio: 3 / 4; border-radius: 28px; max-height: none; }
+  .hero-visual { --fw: 72; }
+  .about-photo { width: 72%; margin: 0 auto; }
 }
