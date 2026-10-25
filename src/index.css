@@ -257,3 +257,11 @@ footer { padding:2rem 5vw; color:var(--paper); background:var(--navy); display:f
 
   .about-photo { width: 100%; max-width: 30.4vw; aspect-ratio: 3 / 4; border-radius: 28px; max-height: none; }
 }
+@media (max-width: 820px) {
+  .hero-visual { --fw: 72; align-items: center; container-type: inline-size; }
+  .portrait-frame { width: calc(var(--fw) * 1%); height: auto; aspect-ratio: 3 / 4; border-radius: 28px; }
+  .bubble-one { top: calc(50% - var(--fw) * 0.56cqw); left: 4%; }
+  .bubble-two { top: calc(50% - var(--fw) * 0.09cqw); right: 3%; bottom: auto; }
+  .bubble-three { top: calc(50% + var(--fw) * 0.36cqw); bottom: auto; left: 3%; }
+  .about-photo { width: 72%; margin: 0 auto; aspect-ratio: 3 / 4; border-radius: 28px; max-height: none; }
+}
