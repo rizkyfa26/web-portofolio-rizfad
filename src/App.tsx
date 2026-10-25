@@ -1,4 +1,5 @@
-import { CSSProperties, FormEvent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 
 const experiences = [
   {
@@ -182,12 +183,12 @@ const certificates = [
 ]
 
 const gallery = [
-  { src: '/assets/pbak.jpeg', title: 'Information Systems Orientation 2026' },
-  { src: '/assets/sharing.jpg', title: 'Sharing Session 2026' },
-  { src: '/assets/gdg-graduation.jpg', title: 'GDGoC UIN Jakarta 2026' },
+  { src: '/assets/gallery/pbak.jpeg', title: 'Information Systems Orientation 2026' },
+  { src: '/assets/gallery/sharing.jpg', title: 'Sharing Session 2026' },
+  { src: '/assets/gallery/gdg-graduation.jpg', title: 'GDGoC UIN Jakarta 2026' },
 ]
 
-function SectionTitle({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
+function SectionTitle({ eyebrow, children }: { eyebrow: string; children: ReactNode }) {
   return (
     <div className="section-heading">
       <span>{eyebrow}</span>
@@ -235,7 +236,7 @@ export default function App() {
     }
   }, [])
 
-  const closeMenu = (_event?: FormEvent) => setMenuOpen(false)
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <div>
@@ -419,7 +420,7 @@ export default function App() {
             ))}
           </div>
           <div className="badge-groups">
-          <div>
+            <div>
               <h3>Hard Skills</h3>
               <p><span>Business Intelligence</span><span>Report Drafting</span><span>Data Visualization</span><span>Microsoft Office</span><span>Google Workspace</span><span>Risk Management</span><span>Technical Writing</span></p>
             </div>
@@ -429,6 +430,7 @@ export default function App() {
             </div>
           </div>
         </section>
+
         <section className="section split-section" id="education">
           <div>
             <SectionTitle eyebrow="05">Education</SectionTitle>
@@ -469,15 +471,15 @@ export default function App() {
           <SectionTitle eyebrow="07">Achievement</SectionTitle>
           <div className="achievement-list">
             <article>
-              <img src="/assets/achievement-airlangga.jpeg" alt="Management Startup Challenge 2023 semifinalist certificate" />
+              <img src="/assets/achievement/achievement-airlangga.jpeg" alt="Management Startup Challenge 2023 semifinalist certificate" />
               <div><b>Semifinalist</b><h3>Management Startup Challenge 2023</h3><p>Business Planning · Management Student Association, Airlangga University</p></div>
             </article>
             <article>
-              <img src="/assets/achievement-upn.jpg" alt="Digital Competition 2026 Business Analyst certificate" />
+              <img src="/assets/achievement/achievement-upn.jpg" alt="Digital Competition 2026 Business Analyst certificate" />
               <div><b>11th Place</b><h3>Digital Competition 2026</h3><p>Business Analyst · D3 Information Systems Student Association, UPN Veteran Jakarta</p></div>
             </article>
             <article>
-              <img src="/assets/achievement-kompek.jpg" alt="KOMPeK 26 Business Challenge certificate" />
+              <img src="/assets/achievement/achievement-kompek.jpg" alt="KOMPeK 26 Business Challenge certificate" />
               <div><b>Participant</b><h3>KOMPeK 26</h3><p>Business Challenge · Faculty of Economics and Business, University of Indonesia</p></div>
             </article>
             <article className="achievement-text-only">
@@ -504,7 +506,6 @@ export default function App() {
             ))}
           </div>
         </section>
-
 
         <section className="section languages" id="languages">
           <SectionTitle eyebrow="09">Languages</SectionTitle>
