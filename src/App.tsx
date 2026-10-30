@@ -292,7 +292,7 @@ export default function App() {
           </div>
           <div className="hero-visual">
             <div className="portrait-frame">
-              <img src="./assets/rizky.jpeg" alt="Portrait of Rizky Fadilah" />
+              <img src="./assets/hero-formal.jpg" alt="Portrait of Rizky Fadilah" />
             </div>
             <span className="bubble bubble-one">Data Analyst</span>
             <span className="bubble bubble-two">Human Capital</span>
