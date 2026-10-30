@@ -292,7 +292,7 @@ export default function App() {
           </div>
           <div className="hero-visual">
             <div className="portrait-frame">
-              <img src="./assets/hero-formal.jpg" alt="Portrait of Rizky Fadilah" />
+              <img src="./assets/rizky.jpeg" alt="Portrait of Rizky Fadilah" />
             </div>
             <span className="bubble bubble-one">Data Analyst</span>
             <span className="bubble bubble-two">Human Capital</span>
@@ -305,7 +305,7 @@ export default function App() {
           <SectionTitle eyebrow="01">About Me</SectionTitle>
           <div className="about-grid">
             <div className="about-photo">
-              <img src="./assets/rizky.jpeg" alt="Rizky Fadilah wearing a gray shirt" />
+              <img src="./assets/about-arms.jpg" alt="Rizky Fadilah in a formal suit with arms crossed" />
             </div>
             <div className="about-copy">
               <p className="lead">
