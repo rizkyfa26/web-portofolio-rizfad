@@ -315,7 +315,7 @@ export default function App() {
                 With an academic background combining technology, data, and business understanding, I am interested in applying data-driven approaches to identify problems, analyze patterns, and support effective decision-making.
               </p>
               <div className="contact-lines">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rizkyfaadilah15@gmail.com" target="_blank" rel="noreferrer">rizkyfaadilah15@gmail.com ↗</a>
+                <a href="mailto:rizkyfaadilah15@gmail.com">rizkyfaadilah15@gmail.com ↗</a>
                 <span>+62 896-4780-5484</span>
                 <a href="https://www.linkedin.com/in/rizkyfadilaah" target="_blank" rel="noreferrer">linkedin.com/in/rizkyfadilaah ↗</a>
               </div>
@@ -537,7 +537,7 @@ export default function App() {
             Open to discussions about data, business analysis, and project collaboration.
           </p>
           <div className="contact-actions">
-            <a className="button light" href="https://mail.google.com/mail/?view=cm&fs=1&to=rizkyfaadilah15@gmail.com" target="_blank" rel="noreferrer">Send Email ↗</a>
+            <a className="button light" href="mailto:rizkyfaadilah15@gmail.com">Send Email ↗</a>
             <a className="button light" href="https://www.linkedin.com/in/rizkyfadilaah" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
           <p className="contact-phone">+62 896-4780-5484</p>
